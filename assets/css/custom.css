@@ -1,20 +1,21 @@
-.footer {
-	text-align: center;
-}
 /* Custom container */
-body > .container {
+.container {
 	margin: 0 auto;
-	max-width: 1000px;
+	width: unset;
+	max-width: 940px;
+}
+body > .container {
+	padding: 0 10px;
 	background: url(/assets/svg/background.svg) no-repeat;
 	background-position: center top;
-	background-size: 465px;
+	background-size: 485px;
 }
 .container > hr {
 	margin: 60px 0;
 }
 /* Main message and button */
 .jumbotron {
-	margin: 80px 0;
+	margin: 50px 0;
 	text-align: center;
 }
 .jumbotron .lead {
@@ -53,9 +54,6 @@ body > .container {
 	border-radius: 0 3px 3px 0;
 }
 /* For the homepage */
-.jumbotron {
-	margin: 40px 0;
-}
 .lead {
 	font-weight: normal;
 }
@@ -78,9 +76,12 @@ iframe {
 	border: 0;
 	border-radius: 6px;
 }
+.footer {
+	margin: 0 0 50px 0;
+	text-align: center;
+}
 .footer p {
-	margin-top: 10px;
-	margin-bottom: 0;
+	margin: 10px 0;
 }
 /* Mobile */
 @media only screen and (max-width: 979px) {
@@ -94,21 +95,14 @@ iframe {
 		background: unset;
 	}
 }
-@media only screen and (max-width: 610px) {
-	.jumbotron h1 {
-		font-size: 15vw;
+@media only screen and (max-width: 450px) {
+	.jumbotron .btn {
+		display:inline-block;
 	}
-}
-@media only screen and (max-width: 460px) {
 	#btn-left {
-		margin-right: unset;
+		margin: 0 0 10px 0;
 	}
 	#btn-right {
-		margin-left: unset;
-	}
-}
-@media only screen and (max-width: 425px) {
-	#btn-right {
-		margin-top: 10px;
+		margin: 0;
 	}
 }
