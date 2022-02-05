@@ -2,12 +2,12 @@
 	text-align: center;
 }
 /* Custom container */
-.container {
+body > .container {
 	margin: 0 auto;
 	max-width: 1000px;
 	background: url(/assets/svg/background.svg) no-repeat;
-	background-position: center 40px;
-	background-size: 500px;
+	background-position: center top;
+	background-size: 465px;
 }
 .container > hr {
 	margin: 60px 0;
@@ -17,13 +17,9 @@
 	margin: 80px 0;
 	text-align: center;
 }
-.jumbotron h1 {
-	font-size: 100px;
-	line-height: 1;
-}
 .jumbotron .lead {
 	font-size: 24px;
-	line-height: 1.25;
+	line-height: 1.5;
 }
 .jumbotron .btn {
 	font-size: 21px;
@@ -57,16 +53,11 @@
 	border-radius: 0 3px 3px 0;
 }
 /* For the homepage */
-.masthead {
-	margin-top: 20px;
-}
 .jumbotron {
 	margin: 40px 0;
-	margin-bottom: 50px;
 }
 .lead {
 	font-weight: normal;
-	margin-top: 30px;
 }
 #btn-left {
 	margin-right: 10px;
