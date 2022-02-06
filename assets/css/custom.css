@@ -14,13 +14,17 @@ body > .container {
 .masthead h3 {
 	margin: 5px 0;
 }
-.joiner {
+.masthead .joiner {
 	float: right;
 	margin: 0;
 	font-weight: normal;
 	color: #bbb;
 }
-/* Main message and button */
+hr.hidden {
+	margin: 25px 0;
+	border: 0;
+}
+/* Jumbotron and button */
 .jumbotron {
 	margin: 50px 0;
 	text-align: center;
@@ -70,7 +74,7 @@ body > .container {
 	border-right: 0;
 	border-radius: 0 3px 3px 0;
 }
-/* For the homepage */
+/* Homepage */
 .lead {
 	font-weight: normal;
 }
@@ -99,6 +103,10 @@ iframe {
 }
 .footer p {
 	margin: 10px 0;
+}
+/* Section pages */
+section > .page-header {
+	margin-bottom: 1rem;
 }
 /* Mobile */
 @media only screen and (max-width: 979px) {
