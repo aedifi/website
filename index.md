@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Homepage
+title: Index
 ---
 
-<div class="jumbotron">
+<div class="jumbotron padded">
 	<h1>A semi-whitelisted building server for Minecraft.</h1>
 	<p class="lead">Aedificum is a lightweight building server with a whole bunch of cool features. It runs Cuberite, a FOSS alternative to Bukkit written in C++ and can perform large block operations without using too much memory.</p>
 	<a class="btn btn-large" id="btn-left" href="/about">Learn more</a>

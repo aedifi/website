@@ -6,17 +6,32 @@
 }
 body > .container {
 	padding: 0 10px;
-	background: url(/assets/svg/background.svg) no-repeat;
-	background-position: center top;
-	background-size: 485px;
 }
-.container > hr {
-	margin: 60px 0;
+.masthead img {
+	margin: 0 10px 0 0;
+	filter: brightness(1.10);
+}
+.masthead h3 {
+	margin: 5px 0;
+}
+.joiner {
+	float: right;
+	margin: 0;
+	font-weight: normal;
+	color: #bbb;
 }
 /* Main message and button */
 .jumbotron {
 	margin: 50px 0;
 	text-align: center;
+}
+.jumbotron.padded {
+	margin: -20px 10px 0 10px;
+	padding: 50px 0;
+	background: url(/assets/svg/top_mountain.svg);
+	background-repeat: no-repeat;
+	background-position: right 0 bottom -165px;
+	background-size: 500px;
 }
 .jumbotron .lead {
 	font-size: 24px;
@@ -29,6 +44,7 @@ body > .container {
 /* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
 	padding: 0;
+	border-top-left-radius: 0;
 }
 .navbar .nav {
 	margin: 0;
@@ -48,6 +64,7 @@ body > .container {
 .navbar .nav li:first-child a {
 	border-left: 0;
 	border-radius: 3px 0 0 3px;
+	border-top-left-radius: 0;
 }
 .navbar .nav li:last-child a {
 	border-right: 0;
@@ -96,13 +113,14 @@ iframe {
 	}
 }
 @media only screen and (max-width: 450px) {
+	.jumbotron.padded {
+		background-position-x: center;
+	}
 	.jumbotron .btn {
-		display:inline-block;
+		width: calc(100% - 50px);
+		display: inline-block;
 	}
-	#btn-left {
-		margin: 0 0 10px 0;
-	}
-	#btn-right {
-		margin: 0;
+	#btn-left, #btn-right {
+		margin: 0 0 5px 0;
 	}
 }
