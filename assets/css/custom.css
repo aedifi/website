@@ -21,7 +21,8 @@ body > .container {
 	color: #bbb;
 }
 hr.hidden {
-	margin: 25px 0;
+	margin: 0;
+	padding: 25px 0;
 	border: 0;
 }
 /* Jumbotron and button */

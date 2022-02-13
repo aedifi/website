@@ -2,10 +2,11 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
-				<li {% if current[1] == null %}class='active'{% endif %}><a href="#">Index</a></li>
-				<li {% if current[1] == 'gallery' %}class='active'{% endif %}><a href="/gallery">Gallery</a></li>
-				<li {% if current[1] == 'support' %}class='active'{% endif %}><a href="/support">Support</a></li>
-				<li {% if current[1] == 'about' %}class='active'{% endif %}><a href="/about">About</a></li>
+				{% assign active = page.url | downcase | split: '/' %}
+				<li {% if active[1] == null %}class='active'{% endif %}><a href="/">Index</a></li>
+				<li {% if active[1] == 'gallery' %}class='active'{% endif %}><a href="/gallery">Gallery</a></li>
+				<li {% if active[1] == 'support' %}class='active'{% endif %}><a href="/support">Support</a></li>
+				<li {% if active[1] == 'about' %}class='active'{% endif %}><a href="/about">About</a></li>
 			</ul>
 		</div>
 	</div>
