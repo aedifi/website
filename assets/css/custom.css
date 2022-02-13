@@ -9,7 +9,6 @@ body > .container {
 }
 .masthead img {
 	margin: 0 10px 0 0;
-	filter: brightness(1.10);
 }
 .masthead h3 {
 	margin: 5px 0;
@@ -21,8 +20,7 @@ body > .container {
 	color: #bbb;
 }
 hr.hidden {
-	margin: 0;
-	padding: 25px 0;
+	margin: 15px 0;
 	border: 0;
 }
 /* Jumbotron and button */

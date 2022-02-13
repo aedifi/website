@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallery
+permalink: /gallery/
 ---
 
 <div class="content">
