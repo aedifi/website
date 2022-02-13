@@ -11,7 +11,6 @@ title: Index
 </div>
 <!-- Embedded gameserver map -->
 <div class="hero-unit">
-	<!-- nts: update this -->
-	<!-- worldname -> adminworld & mapname -> surface & zoom -> 5 & x -> 5, y -> 70, z -> 20 & nogui -> true -->
-	<iframe src="https://secure.aedi.app/map?worldname=adminworld&amp;mapname=surface&amp;zoom=5&amp;x=5&amp;y=70&amp;z=20&amp;nogui=true"></iframe>
+	<!-- world_classic -> surface & zoom -> 6 & x -> 0, z -> 16, y -> 64 -->
+	<iframe src="https://map.aedi.app/#world_classic/0/6/0/16/64"></iframe>
 </div>
