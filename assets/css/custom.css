@@ -109,15 +109,18 @@ section > .page-header {
 	margin-bottom: 1rem;
 }
 /* Support pages */
-#supportPage > .span3 {
+.support-sidebar .span3 {
 	margin-left: 0;
 }
-#supportPage .span9 {
+.support-sidebar .span9 {
 	width: unset;
 	max-width: 700px;
 }
-.well.sidebar-nav {
+.sidebar-nav {
 	padding: 10px 0;
+}
+.support-sidebar .page-header, .support-sidebar .page-header h1 {
+	margin-top: 0;
 }
 /* Mobile */
 @media only screen and (max-width: 979px) {
