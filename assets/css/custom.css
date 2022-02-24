@@ -97,6 +97,7 @@ iframe {
 	border-radius: 6px;
 }
 .footer {
+	clear: left;
 	margin: 0 0 50px 0;
 	text-align: center;
 }
@@ -110,6 +111,10 @@ section > .page-header {
 /* Support pages */
 #supportPage > .span3 {
 	margin-left: 0;
+}
+#supportPage .span9 {
+	width: unset;
+	max-width: 700px;
 }
 .well.sidebar-nav {
 	padding: 10px 0;

@@ -4,4 +4,43 @@ title: Survival server
 permalink: /support/survival/
 ---
 
-tba...
+<section id="survivalServer">
+	<div class="page-header">
+		<h1>Survival server</h1>
+	</div>
+	<p>We have a survival server hosted on <code>survival.aedi.app</code> that acts as an extension of the creative server, a side project, which anyone can join.  It's based off a high-scale map of the Earth with nation's borders intact and has the Towny plugin for players to claim chunks of land.</p>
+	<h4>Voting for the server</h4>
+	<p>Casting a vote in favor of the server on a number of gameserver listing websites will give you benefits.  Each player is given $1,000 in-game currency by the server in exchange for their vote.  Below are a number of websites you may vote on that will be recognized.</p>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Server listing</th>
+				<th>Direct link</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<th>TopG</th>
+				<th><a href="/vote/topg" target="_blank">https://aedi.app/vote/topg/</a></th>
+			</tr>
+			<tr>
+				<th>2</th>
+				<th>Planet Minecraft</th>
+				<th><a href="/vote/pmc" target="_blank">https://aedi.app/vote/pmc/</a></th>
+			</tr>
+			<tr>
+				<th>3</th>
+				<th>Minecraft-Server-List</th>
+				<th><a href="/vote/mcl1" target="_blank">https://aedi.app/vote/mcl1/</a></th>
+			</tr>
+			<tr>
+				<th>4</th>
+				<th>MinecraftServers</th>
+				<th><a href="/vote/ms1" target="_blank">https://aedi.app/vote/ms1/</a></th>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<hr class="hidden">
