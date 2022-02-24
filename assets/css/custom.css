@@ -109,7 +109,11 @@ section > .page-header {
 	margin-bottom: 1rem;
 }
 /* Support pages */
+.support-sidebar {
+	display: flex;
+}
 .support-sidebar .span3 {
+	min-width: 220px;
 	margin-left: 0;
 }
 .support-sidebar .span9 {

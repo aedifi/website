@@ -2,7 +2,7 @@
 	<ul class="nav nav-list">
 		{% assign active = page.url | downcase | split: '/' %}
 		<li class="nav-header">Sidebar</li>
-		<li {% if active[1] == 'support' %}class='active'{% endif %}><a href="#">Support index</a></li>
+		<li {% if active[2] == null %}class='active'{% endif %}><a href="/support">Support index</a></li>
 		<li {% if active[2] == 'survival' %}class='active'{% endif %}><a href="/support/survival">Survival server</a></li>
 		<li class="nav-header">Sidebar</li>
 		<li><a href="#">Link</a></li>
