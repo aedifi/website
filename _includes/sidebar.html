@@ -1,0 +1,12 @@
+<div class="well sidebar-nav">
+	<ul class="nav nav-list">
+		{% assign active = page.url | downcase | split: '/' %}
+		<li class="nav-header">Sidebar</li>
+		<li class="active"><a href="#">Link</a></li>
+		<li {% if active[2] == survival %}class='active'{% endif %}><a href="/support/survival">Survival server</a></li>
+		<li class="nav-header">Sidebar</li>
+		<li><a href="#">Link</a></li>
+		<li class="nav-header">Sidebar</li>
+		<li><a href="#">Link</a></li>
+	</ul>
+</div>

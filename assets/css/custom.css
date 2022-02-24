@@ -107,6 +107,13 @@ iframe {
 section > .page-header {
 	margin-bottom: 1rem;
 }
+/* Support pages */
+#supportPage > .span3 {
+	margin-left: 0;
+}
+.well.sidebar-nav {
+	padding: 10px 0;
+}
 /* Mobile */
 @media only screen and (max-width: 979px) {
 	.container {

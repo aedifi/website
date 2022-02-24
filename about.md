@@ -12,10 +12,13 @@ permalink: /about/
 		<p>Aedificium is a semi-whitelisted architecture-oriented server for the sandbox video game Minecraft.  Anyone can join our server and explore what architects have built for themselves or apply for the position in order to get building.  There are three ranks on our server, discounting new players: architect, moderator, and administrator.  The rank of architect grants every permission that is not moderation-related on our server.</p>
 		<dl class="dl-horizontal">
             <dt>July 21, 2013</dt>
-            <dd>The server began operating as a sandbox community where every player was given building permissions.</dd>
+            <dd>The server began operating as a sandbox community named Chromium where every player was given building permissions.</dd>
 			<dd>We originally ran a fork of CraftBukkit and a modified release of TotalFreedomMod, created by Steven Lawson and Jerom van der Sar, to give players "operator" access.</dd>
+			<dt>August 31, 2015</dt>
+			<dd>Chromium's server was destroyed due to a data loss incident.</dd>
+			<dd>I created a new server based off the same model with the name "shadow.ga."</dd>
 			<dt>May 4, 2018</dt>
-			<dd>The server went offline for ~1 year and it has since returned as a place for builders with a whitelist.</dd>
+			<dd>The server went offline for ~1 year and it has since returned as a place for builders with a whitelist as Aedificium.</dd>
 			<dt>May 1, 2020</dt>
 			<dd>We switched from a fork of the CraftBukkit server software to Cuberite, a free and open source (FOSS) server software.</dd>
 			<dd>Shortly after this happened the development of our own plugins began in order to provide features that were previously had.</dd>
