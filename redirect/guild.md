@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /guild/
-redirect: https://discord.gg/47kNfRs/
+redirect: https://discord.com/invite/47kNfRs/
 ---

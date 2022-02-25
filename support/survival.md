@@ -8,11 +8,11 @@ permalink: /support/survival/
 	<div class="page-header">
 		<h1>Survival server</h1>
 	</div>
-	<p>We have a survival server hosted on `survival.aedi.app` that acts as an extension of the creative server, a side project, which anyone can join.  It's based off a high-scale map of the Earth with nation's borders intact and has the Towny plugin for players to claim chunks of land.</p>
+	<p>We have a survival server hosted on <code>survival.aedi.app</code> that acts as an extension of the creative server, a side project, which anyone can join.  It's based off a high-scale map of the Earth with nation's borders intact and has the Towny plugin for players to claim chunks of land.</p>
 	<h4>Towny basics</h4>
-	<p>The operative goal of our survial extension is to establish competitiveness while remaining fun. It costs nothing to start a town using `/t new <name>` however chunks of land start at $10 in-game currency and that cost will increase +2.5% per each additionally claimed piece of land.</p>
-	<p>Towns have a $10 daily upkeep which requires a balance to be deposited into them using `/t deposit <amount>` from your Essentials balance. Nations have a $1 daily upkeep.</p>
-	<p>It costs $100 to start a nation using `/n new <nation> [capital]` under which multiple towns can join. A player can only be the mayor of one town and the king of one nation at once. Having a town and a nation are not mutually exclusive.</p>
+	<p>The operative goal of our survial extension is to establish competitiveness while remaining fun. It costs nothing to start a town using <code>/t new &lt;name&gt;</code> however chunks of land start at $10 in-game currency and that cost will increase +2.5% per each additionally claimed piece of land.</p>
+	<p>Towns have a $10 daily upkeep which requires a balance to be deposited into them using <code>/t deposit &lt;amount&gt;</code> from your Essentials balance. Nations have a $1 daily upkeep.</p>
+	<p>It costs $100 to start a nation using <code>/n new &lt;nation&gt; [capital]</code> under which multiple towns can join. A player can only be the mayor of one town and the king of one nation at once. Having a town and a nation are not mutually exclusive.</p>
 	<h4>Voting for the server</h4>
 	<p>Casting a vote in favor of the server on a number of gameserver listing websites will give you benefits.  Each player is given $1,000 in-game currency by the server in exchange for their vote.  Below are a number of websites you may vote on that will be recognized.</p>
 	<table class="table table-bordered">
