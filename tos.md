@@ -23,5 +23,4 @@ permalink: /tos/
 		</div>
 		<p>to be added...</p>
 	</section>
-	<hr class="hidden">
 </div>

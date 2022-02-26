@@ -39,5 +39,4 @@ permalink: /about/
 		</ol>
 		<p>We consider these guidelines to be succinct and understandable enough for players of all shortcomings to be devoid of an excuse not to have read them.</p>
 	</section>
-	<hr class="hidden">
 </div>

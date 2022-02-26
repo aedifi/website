@@ -19,10 +19,6 @@ body > .container {
 	font-weight: normal;
 	color: #bbb;
 }
-hr.hidden {
-	margin: 25px 0;
-	border: 0;
-}
 /* Jumbotron and button */
 .jumbotron {
 	margin: 50px 0;
@@ -86,7 +82,7 @@ hr.hidden {
 .hero-unit {
 	padding: 0;
 	height: 18.5rem;
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 	border: 1px solid #d4d4d4;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
@@ -98,7 +94,7 @@ iframe {
 }
 .footer {
 	clear: left;
-	margin: 0 0 50px 0;
+	margin: 25px 0 50px 0;
 	text-align: center;
 }
 .footer p {
@@ -136,6 +132,20 @@ section > .page-header {
 @media only screen and (max-width: 767px) {
 	.container {
 		background: unset;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.support-sidebar {
+		flex-direction: column;
+	}
+	.support-sidebar .span3 {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.support-sidebar .span9 {
+		float: none;
+		margin: 0;
 	}
 }
 @media only screen and (max-width: 450px) {

@@ -20,4 +20,3 @@ permalink: /support/
 	<p>Players retain sole ownership and the right to access their builds which are uploaded to or created on our server.  Because of this, we offer easy methods for these works to be shared with the rest of our community.</p>
 	<p>The Edits plugin allows for architects to save, load, and index selections which are copied to a member's clipboard. Schematics are a file format used by WorldEdit/MCEdit with which our plugins are fully compliant.</p>
 </section>
-<hr class="hidden">

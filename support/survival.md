@@ -49,4 +49,3 @@ permalink: /support/survival/
 	<h4>Dynamic map</h4>
 	<p>There is a dynamic map generated with Dynmap and served with the <a href="https://survival.aedi.app/" target="_blank">internal web server</a> that can be visited from the survival server's address in your browser.  This is exclusive to the survival extension and may load slower than the static map generated with Mapcrafter that is described earlier in this documentation or may not be served at all if the server is offline.</p>
 </section>
-<hr class="hidden">
