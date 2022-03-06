@@ -21,19 +21,44 @@ permalink: /support/commands/
 		</thead>
 		<tbody>
 			<tr>
+				<td><code>/ascend</code></td>
+				<td><code>edits.navigation.ascend</code></td>
+				<td>Ascends you upward.</td>
+			</tr>
+			<tr>
+				<td><code>/biomes</code></td>
+				<td><code>edits.biomes</code></td>
+				<td>Lists biomes compatible with the server.</td>
+			</tr>
+			<tr>
 				<td><code>/chunks</code></td>
 				<td><code>basics.chunks</code></td>
 				<td>Lists any chunks in the server's memory.</td>
 			</tr>
 			<tr>
-				<td><code>/commands</code><code>/help</code></td>
+				<td><code>/commands</code> <code>/help</code></td>
 				<td><code>basics.help</code></td>
 				<td>Lists permissible commands.</td>
+			</tr>
+			<tr>
+				<td><code>/cui</code></td>
+				<td><code>edits.cui</code></td>
+				<td>Completes the CUI visualizer handshake.</td>
+			</tr>
+			<tr>
+				<td><code>/descend</code></td>
+				<td><code>edits.navigation.descend</code></td>
+				<td>Descends you downward.</td>
 			</tr>
 			<tr>
 				<td><code>/distance &lt;distance&gt;</code></td>
 				<td><code>basics.distance</code></td>
 				<td>Sets your render distance. `distance` = `min - max` for client.</td>
+			</tr>
+			<tr>
+				<td><code>/formats</code></td>
+				<td><code>edits.schematic.list</code></td>
+				<td>Lists supported schematic formats.</td>
 			</tr>
 			<tr>
 				<td><code>/lag</code></td>
@@ -76,9 +101,14 @@ permalink: /support/commands/
 				<td>Lists configured worlds.</td>
 			</tr>
 			<tr>
-				<td><code>/whisper &lt;player&gt; &lt;message&gt; (or) /reply &lt;message&gt;</code></td>
+				<td><code>/whisper &lt;player&gt; &lt;message&gt;</code> <code>/reply &lt;message&gt;</code></td>
 				<td><code>basics.whisper</code></td>
 				<td>Directly messages somebody.</td>
+			</tr>
+			<tr>
+				<td><code>/schematics</code></td>
+				<td><code>edits.schematic.list</code></td>
+				<td>Lists schematics on the server.  Because there are so many, it will just link you to the <a href="https://files.aedi.app/schematics/" target="_blank">file server</a>.</td>
 			</tr>
 			<tr>
 				<td><code>/seed [world]</code></td>
