@@ -1,15 +1,14 @@
 ---
 layout: default
 title: About the server
-permalink: /about/
+permalink: /support/
 ---
 
-<div class="content">
-	<section id="aboutServer">
-		<div class="page-header text-center">
-			<h1>About the server</h1>
-		</div>
-		<p>Aedificium is a semi-whitelisted architecture-oriented server for the sandbox video game Minecraft.  Anyone can join our server and explore what architects have built for themselves or apply for the position in order to get building.  There are three ranks on our server, discounting new players: architect, moderator, and administrator.  The rank of architect grants every permission that is not moderation-related on our server.</p>
+<section id="aboutServer">
+	<div class="page-header">
+		<h1>About the server</h1>
+	</div>
+	<p>Aedificium is a semi-whitelisted architecture-oriented server for the sandbox video game Minecraft.  Anyone can join our server and explore what architects have built for themselves or apply for the position in order to get building.  There are three ranks on our server, discounting new players: architect, moderator, and administrator.  The rank of architect grants every permission that is not moderation-related on our server.</p>
 		<dl class="dl-horizontal">
             <dt>July 21, 2013</dt>
             <dd>The server began operating as a sandbox community named Chromium where every player was given building permissions.</dd>
@@ -23,10 +22,12 @@ permalink: /about/
 			<dd>We switched from a fork of the CraftBukkit server software to Cuberite, a free and open source (FOSS) server software.</dd>
 			<dd>Shortly after this happened the development of our own plugins began in order to provide features that were previously had.</dd>
 		</dl>
-	</section>
-	<section id="conductPolicy">
-		<div class="page-header text-center">
-			<h1>Conduct policy</h1>
+	<h4>Help the project</h4>
+	<p>Our server is completely free for players and moderated by volunteers.  We rely on community contributions to help us improve and expand on the project.</p>
+</section>
+<section id="conductPolicy">
+		<div class="page-header">
+			<h2>Conduct policy</h2>
 		</div>
 		<p>The “conduct policy” represents a set of basic guidelines which are unified across every platform where our services are offered.  If our staff believe that you have violated these guidelines then they are permitted to take whatever action they deem necessary, which may extend to your account being banned.</p>
 		<ol>
@@ -38,5 +39,4 @@ permalink: /about/
 			<li>Evading your punishment will result in a longer one. Instead, appeal it.</li>
 		</ol>
 		<p>We consider these guidelines to be succinct and understandable enough for players of all shortcomings to be devoid of an excuse not to have read them.</p>
-	</section>
-</div>
+</section>
