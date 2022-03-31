@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: support
 title: Frequently asked questions
 permalink: /support/faq/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: support
 title: About the server
 permalink: /support/
 ---
