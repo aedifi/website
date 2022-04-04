@@ -1,7 +1,7 @@
 ---
 layout: support
 title: Conduct policy
-permalink: /rules/
+permalink: /support/rules/
 ---
 
 <section id="conductPolicy">

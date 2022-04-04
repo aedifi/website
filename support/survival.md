@@ -47,5 +47,7 @@ permalink: /support/survival/
 		</tbody>
 	</table>
 	<h4>Dynamic map</h4>
-	<p>There is a dynamic map generated with Dynmap and served with the <a href="https://survival.aedi.app/" target="_blank">internal web server</a> that can be visited from the survival server's address in your browser.  This is exclusive to the survival extension and may load slower than the static map generated with Mapcrafter that is described earlier in this documentation or may not be served at all if the server is offline.</p>
+	<p>There is a dynamic map generated with Dynmap and hosted on <code>survival.aedi.app</code> <a href="https://survival.aedi.app/" target="_blank">in your browser</a>.  This is exclusive to the survival extension and may load slower than the static map generated with Mapcrafter or may not be served at all if the server is offline.</p>
+	<h3>CB1092 1.7.2 server</h3>
+	<p>A very basic survival server for <b>beta 1.7.3</b> of Java Edition is hosted on <code>beta.aedi.app</code> with the required port <code>55565</code> if you'd like to enjoy the simpler days of Minecraft.  Several known bugs with the CraftBukkit server software, CB1060, have been patched as part of <a href="https://github.com/RhysB/Project-Poseidon" target="_blank">Project Poseidon</a>.</p>
 </section>
