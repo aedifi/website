@@ -107,7 +107,8 @@ section > .page-header {
 /* Apply to build */
 .typeform-widget {
 	margin-top: 15px;
-	border: 1px solid #d4d4d4;
+	background: #f5f5f5;
+	border: 1px solid #e3e3e3;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgb(0 0 0 / 7%);
 }

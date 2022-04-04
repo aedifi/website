@@ -38,18 +38,3 @@ permalink: /support/
 		<li>Finally, if you enjoy the server then you should not feel hesitant to share it to your friends or post about Aedificium on social media.  More awareness leads to more engagement and therefore more activity, architects, and better contributions.</li>
 	</ol>
 </section>
-<section id="conductPolicy">
-		<div class="page-header">
-			<h2>Conduct policy</h2>
-		</div>
-		<p>The “conduct policy” represents a set of basic guidelines which are unified across every platform where our services are offered.  If our staff believe that you have violated these guidelines then they are permitted to take whatever action they deem necessary, which may extend to your account being banned.</p>
-		<ol>
-			<li>You will not use our services to do anything that violates local or federal United States law.</li>
-			<li>You will cease to use the server and not continue to operate your forum account if you are under the age of 13.</li>
-			<li>You will not threaten players with their personal information, post the personal information of players on this site, or request their information either in public or in private ("dox").</li>
-			<li>The privacy of other players is important to this community. Avoid harassing other members by building in direct proximity to another player's project.</li>
-			<li>Destroying the builds of others or modifying the work of others without their explicit permission is known as griefing, which will not be tolerated. Data backups of server files are routinely kept.</li>
-			<li>Evading your punishment will result in a longer one. Instead, appeal it.</li>
-		</ol>
-		<p>We consider these guidelines to be succinct and understandable enough for players of all shortcomings to be devoid of an excuse not to have read them.</p>
-</section>
