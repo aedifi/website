@@ -104,6 +104,11 @@ iframe {
 section > .page-header {
 	margin-bottom: 1rem;
 }
+/* Gallery */
+#gallery .thumbnails {
+	display: flex;
+	justify-content: center;
+}
 /* Apply to build */
 .typeform-widget {
 	margin-top: 15px;
@@ -123,6 +128,12 @@ section > .page-header {
 .support-sidebar .span9 {
 	width: unset;
 	max-width: 700px;
+}
+.support-sidebar code {
+	background-color: #fee9cc;
+	color: rgba(0, 0, 0, 0.75);
+	border: 0;
+	padding: 1px 3px;
 }
 .sidebar-nav {
 	padding: 10px 0;
@@ -144,6 +155,9 @@ section > .page-header {
 	}
 }
 @media only screen and (max-width: 600px) {
+	#gallery .thumbnails {
+		flex-wrap: wrap;
+	}
 	.support-sidebar {
 		flex-direction: column;
 	}
