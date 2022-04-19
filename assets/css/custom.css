@@ -104,6 +104,9 @@ iframe {
 section > .page-header {
 	margin-bottom: 1rem;
 }
+section .alert {
+	margin: 0 0 10px;
+}
 /* Gallery */
 #gallery .thumbnails {
 	display: flex;

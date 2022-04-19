@@ -10,6 +10,9 @@ permalink: /support/commands/
 	</div>
 	<p>This is a list of commands included in each of the three plugins used on the server.  They are organized by permission level of which there are four ranks: visitor (granted to every player when they join), architect, moderator and administrator.  Permissions are stored in a <code>Ranks.sqlite</code> file which also contains each player's rank according to their UUID.</p>
 	<p><code>/help</code> can be used in-game or from console to list permissible commands.</p>
+	<div class="alert alert-info">
+		<strong>Heads up!</strong> This page is a work in progress, so it may be incomplete or misleading. It's also only relevant to the <b>creative server</b>.
+	</div>
 	<h4>Visitor-level commands</h4>
 	<table class="table table-bordered table-striped">
 		<thead>
