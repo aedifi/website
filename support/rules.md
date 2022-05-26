@@ -12,14 +12,8 @@ permalink: /support/rules/
 	<ol>
 		<li>You will not use our services to do anything that violates local or federal United States law.</li>
 		<li>You will cease to use the server and not continue to operate your forum account if you are under the age of 13.</li>
-		<li>You will not threaten players with their personal information, post the personal information of players on this site, or request their information either in public or in private ("dox").</li>
-		<li>You will not act maliciously towards other players. The following are strictly forbidden:</li>
-			<ol type="a">
-				<li>Posting the personal information of players in public or in private ("dox")</li>
-				<li>Making calls to invasion or otherwise violate these guidelines ("raids")</li>
-				<li>Impersonating a moderator, administrator or any other person of authority on the platform</li>
-			</ol>
-		<li>You will not upload or link to files containing additional data such as embedded sounds, documents, archives, etc.</li>
+		<li>You will not post or request personal information ("dox") or calls to invasion ("raids").</li>
+		<li>Advertising is not welcome—this includes any type of link or referral to another service.</li>
 		<li>You will not use our services to transmit any harmful packets, including:</li>
 			<ol type="a">
 				<li>Packets with a spoofed source address</li>
