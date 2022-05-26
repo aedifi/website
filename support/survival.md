@@ -10,7 +10,7 @@ permalink: /support/survival/
 	</div>
 	<p>We have a survival server hosted on <code>survival.aedi.app</code> that acts as an extension of the creative server, a side project, which anyone can join.  It's based off a high-scale map of the Earth with nation's borders intact and uses the Factions plugin (formerly Towny) for players to claim chunks of land.</p>
 	<h3>Factions basics</h3>
-	<p>The operative goal of our survial extension is to establish competitiveness while remaining fun. It costs $100 in-game currency to start a faction using <code>/f create &lt;name&gt;</code> however chunks of land start at $25 in-game currency and that cost will increase per each additionally claimed piece of land (`25 + (25 * 0.025 * ownedLand)`).</p>
+	<p>The operative goal of our survial extension is to establish competitiveness while remaining fun. It costs $100 in-game currency to start a faction using <code>/f create &lt;name&gt;</code> however chunks of land start at $25 in-game currency and that cost will increase per each additionally claimed piece of land: <code>25 + (25 * 0.025 * ownedLand)</code>.</p>
 	<p>Relations between factions default to neutral, however this can be changed. The <b>ally</b> and <b>truce</b> relations require a mutual agreement to take effect (via commands) however the <b>enemy</b> relation is one-sided and does not require any form of consent on behalf of the receiving party. Factions have a permissions structure that allow for factions owners to control particular aspects of the plugin as they trickle down to players within a faction.</p>
 	<p>Each faction has its own bank or vault that can be managed with the command <code>/f money</code> that in turn provides a list of money-related commands.  In-game currency from your own <code>/balance</code> must be deposited into the faction's bank so that certain things can be paid for, including land.</p>
 	<h4>List of survival commands</h4>
@@ -32,11 +32,11 @@ permalink: /support/survival/
 				<td>Displays a list of money-related commands for Factions.</td>
 			</tr>
 			<tr>
-				<td><code>/f list<code></td>
+				<td><code>/f list</code></td>
 				<td>Displays a list of active factions on the server.</td>
 			</tr>
 			<tr>
-				<td><code>/f show</code></code>/f who</code></td>
+				<td><code>/f show</code><code>/f who</code></td>
 				<td>Displays a summary of your faction's current status.</td>
 			</tr>
 			<tr>
@@ -69,7 +69,7 @@ permalink: /support/survival/
 			</tr>
 		</tbody>
 	</table>
-	<h4>Voting for the server</h4>
+	<h3>Voting for the server</h3>
 	<p>Casting a vote in favor of the server on a number of gameserver listing websites will give you benefits.  Each player is given $1,000 in-game currency by the server in exchange for their vote.  Below are a number of websites you may vote on that will be recognized.</p>
 	<table class="table table-bordered table-striped">
 		<thead>
@@ -102,6 +102,6 @@ permalink: /support/survival/
 			</tr>
 		</tbody>
 	</table>
-	<h4>Dynamic map</h4>
+	<h3>Dynamic map</h3>
 	<p>There is a dynamic map generated with Dynmap and hosted on <code>survival.aedi.app</code> <a href="https://survival.aedi.app/" target="_blank">in your browser</a>.  This is exclusive to the survival extension and may load slower than the static map generated with Mapcrafter or may not be served at all if the server is offline.</p>
 </section>
