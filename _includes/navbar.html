@@ -1,8 +1,8 @@
-<div class="navbar">
+{% assign active = page.url | downcase | split: '/' %}
+<div {% if active[1] == null %}class='navbar index'{% else %}class='navbar'{% endif %}>
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
-				{% assign active = page.url | downcase | split: '/' %}
 				<li {% if active[1] == null %}class='active'{% endif %}><a href="/">Index</a></li>
 				<li {% if active[1] == 'gallery' %}class='active'{% endif %}><a href="/gallery">Gallery</a></li>
 				<li {% if active[1] == 'support' %}class='active'{% endif %}><a href="/support">Support</a></li>
