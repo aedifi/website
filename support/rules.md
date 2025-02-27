@@ -3,7 +3,6 @@ layout: support
 title: Conduct policy
 permalink: /support/rules/
 ---
-# Conduct policy
 The **conduct policy** represents a set of basic guidelines which are unified across everywhere our services are offered.  If our staff believe that you have violated these guidelines then they are permitted to take whatever action they deem necessary, which may extend to your account being banned.
 
 <ol>
