@@ -3,7 +3,7 @@ layout: support
 title: Conduct policy
 permalink: /support/rules/
 ---
-The **conduct policy** represents a set of basic guidelines which are unified across everywhere our services are offered.  If our staff believe that you have violated these guidelines then they are permitted to take whatever action they deem necessary, which may extend to your account being banned.
+The **conduct policy** represents a set of basic guidelines to maintain good conduct of players on the server.  If our staff believe that you have violated these guidelines then they are permitted to take whatever action they deem necessary, which may extend to your account being banned.
 
 <ol>
 	<li>You will not use our services to do anything that violates local or federal United States law.</li>
