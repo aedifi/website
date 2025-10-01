@@ -3,13 +3,10 @@ layout: support
 title: Reporting issues
 permalink: /support/issues/
 ---
+# Reporting issues
+If you discover an issue on the server, there are several ways you can go about reporting it.
 
-<section id="reportingIssues">
-	<div class="page-header">
-		<h1>Reporting issues</h1>
-	</div>
-	<p>If you discover an issue on the server, you may follow this document in order to see it addressed promptly.  We need people who can troubleshoot issues patiently and communicate them in clear English.</p>
-	<h3>Checking for duplicates</h3>
+### Checking for duplicates
 	<p>If you have found an issue then you should first check to make sure it's not already known to the community by asking around.  An issue that is simple, such as a misspelled word or poor performance, may be reported through the <b>#issues channel</b> of our Discord server.  Something that impedes your playing on the server, leads to its repeated crashing, or breaks a command's intended functionality is major enough to report by opening a new issue.</p>
 	<h3>Troubleshooting</h3>
 	<p>Before you proceed, you should try using the <code>1.12.2 (340)</code> version/protocol of Minecraft if you are not doing so already and see if the issue is not brought on by cross-version compatibility between versions of the game.  Earlier versions such as <b>1.8.9</b> now experience numerous issues despite being supported by the Cuberite server software.  Newer versions of the game are supported behind a proxy software and may run into similar problems with cross-version.</p>
