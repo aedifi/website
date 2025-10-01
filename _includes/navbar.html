@@ -9,8 +9,8 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li class="nav-header">Quick links</li>
-						<li><a href="/support/commands">List of commands</a></li>
-						<li><a href="/support/vote">List of voting sites</a></li>
+						<li {% if active[1] == 'support' and active[2] == 'commands' %}class='active'{% endif %}><a href="/support/commands">List of commands</a></li>
+						<li {% if active[1] == 'support' and active[2] == 'vote' %}class='active'{% endif %}><a href="/support/vote">List of voting sites</a></li>
 						<li class="divider"></li>
 						<li class="nav-header">Forms</li>
 						<li><a href="/forms/banned">Appeal a ban</a></li>
@@ -18,14 +18,20 @@
 						<li class="divider"></li>
 						<li class="nav-header">External pages</li>
 						<li><a href="https://files.aedi.app/">Static file server</a></li>
-						<li><a href="/map">Dynmap® map</a></li>
+						<li {% if active[1] == 'map' %}class='active'{% endif %}><a href="/map">Dynmap® map</a></li>
 						<li><a href="https://panel.aedi.app/">Pterodactyl® panel</a></li>
 					</ul>
 				</li>
 				<li {% if active[1] == 'support' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						{% include sidebar.html %}
+						<li class="nav-header">Introduction</li>
+						<li {% if active[1] == 'support' and active[2] == null %}class='active'{% endif %}><a href="/about">About the server</a></li>
+						<li {% if active[1] == 'support' and active[2] == 'rules' %}class='active'{% endif %}><a href="/support/rules">Conduct policy</a></li>
+						<li {% if active[1] == 'support' and active[2] == 'issues' %}class='active'{% endif %}><a href="/support/issues">Reporting issues</a></li>
+						<li {% if active[1] == 'support' and active[2] == 'faq' %}class='active'{% endif %}><a href="/support/faq">Frequently asked questions</a></li>
+						<li class="divider"></li>
+						<li><a href="/support">More articles...</a></li>
 					</ul>
 				</li>
 				<li><a href="https://forum.aedi.app">Forum</a></li>
