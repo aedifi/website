@@ -9,4 +9,4 @@ In addition to the freebuild privileges granted to every player, architects may 
 
 In order to become an architect, the player must be sponsored by an established member of the community with the rank of architect, or a moderator or administrator.  This is normally accomplished by making a new conversation on the forum, in which the sponsor states their intentions, to which any player may air their objections before the server owner grants the rank of architect to the player being sponsored.
 
-Sponsors will be held responsible for ensuring that the architects who they sponsor remain in compliance with the conduct policy and continue to act in good faith as a member of the community.
+Sponsors will be held responsible for ensuring that the architects who they sponsor continue to act in good faith and remain in compliance with the conduct policy.  An architect who has been sponsored may themselves sponsor another architect once they have become an established member of the community.

@@ -1,5 +1,5 @@
 {% assign active = page.url | downcase | split: '/' %}
-<div {% if active[1] == null %}class='navbar index'{% else %}class='navbar'{% endif %}>
+<div {% if active[1] == 'blog' or active[1] == 'map' %}class='navbar squared'{% else %}class='navbar'{% endif %}>
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
@@ -8,14 +8,26 @@
 				<li {% if active[1] == 'resources' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 					<ul class="dropdown-menu">
+						<li class="nav-header">Quick links</li>
+						<li><a href="/support/commands">List of commands</a></li>
+						<li><a href="/support/vote">List of voting sites</a></li>
+						<li class="divider"></li>
+						<li class="nav-header">Forms</li>
+						<li><a href="/forms/banned">Appeal a ban</a></li>
+						<li><a href="/forms/architect">Become an architect</a></li>
+						<li class="divider"></li>
+						<li class="nav-header">External pages</li>
 						<li><a href="https://files.aedi.app/">Static file server</a></li>
 						<li><a href="/map">Dynmap® map</a></li>
-						<li class="divider"></li>
-						<li class="nav-header">Administrators</li>
 						<li><a href="https://panel.aedi.app/">Pterodactyl® panel</a></li>
 					</ul>
 				</li>
-				<li {% if active[1] == 'support' %}class='active'{% endif %}><a href="/support">Support</a></li>
+				<li {% if active[1] == 'support' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						{% include sidebar.html %}
+					</ul>
+				</li>
 				<li><a href="https://forum.aedi.app">Forum</a></li>
 			</ul>
 		</div>

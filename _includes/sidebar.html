@@ -1,14 +1,10 @@
-<div class="well sidebar-nav">
-	<ul class="nav nav-list">
-		{% assign active = page.url | downcase | split: '/' %}
-		<li class="nav-header">Introduction</li>
-		<li {% if active[2] == null %}class='active'{% endif %}><a href="/about">About the server</a></li>
-		<li {% if active[2] == 'rules' %}class='active'{% endif %}><a href="/support/rules">Conduct policy</a></li>
-		<li {% if active[2] == 'issues' %}class='active'{% endif %}><a href="/support/issues">Reporting issues</a></li>
-		<li {% if active[2] == 'faq' %}class='active'{% endif %}><a href="/support/faq">Frequently asked questions</a></li>
-		<li {% if active[2] == 'survival' %}class='active'{% endif %}><a href="/support/survival">Survival server</a></li>
-		<li class="nav-header">Plugins</li>
-		<li {% if active[2] == 'commands' %}class='active'{% endif %}><a href="/support/commands">List of commands</a></li>
-		<li class="nav-header">To be continued</li>
-	</ul>
-</div>
+{% assign active = page.url | downcase | split: '/' %}
+<li class="nav-header">Introduction</li>
+<li {% if active[2] == null %}class='active'{% endif %}><a href="/about">About the server</a></li>
+<li {% if active[2] == 'rules' %}class='active'{% endif %}><a href="/support/rules">Conduct policy</a></li>
+<li {% if active[2] == 'issues' %}class='active'{% endif %}><a href="/support/issues">Reporting issues</a></li>
+<li {% if active[2] == 'faq' %}class='active'{% endif %}><a href="/support/faq">Frequently asked questions</a></li>
+<li {% if active[2] == 'survival' %}class='active'{% endif %}><a href="/support/survival">Survival server</a></li>
+<li class="nav-header">Plugins</li>
+<li {% if active[2] == 'commands' %}class='active'{% endif %}><a href="/support/commands">List of commands</a></li>
+<li class="nav-header">To be continued</li>
