@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-
+{% assign active = page.url | downcase | split: '/' %}
 <div class="jumbotron blog">
     <div class="inner">
 	    <h1>Commentarii interretiales de ædificium</h1>
 	    <p><i>Online comments pertaining to Aedificium.</i>  A blog which concerns the continued development of our favorite architecture server, written by a small team of administrators.<p>
+        <ul class="links">
+            {% if active[2] != 'posts' %}<li><a href="/blog/posts">See all blog posts »</a></li>{% endif %}
+        </ul>
     </div>
 </div>

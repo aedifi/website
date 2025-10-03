@@ -25,37 +25,52 @@ body > .container-fluid {
 	text-align: center;
 }
 .jumbotron.index.padded {
-	margin: -20px 0 0;
-	padding: 45px 10px;
-	background-color: #cccccc;
-	background-image: linear-gradient(30deg, #eeeeee 12%, transparent 12.5%, transparent 87%, #eeeeee 87.5%, #eeeeee),linear-gradient(150deg, #eeeeee 12%, transparent 12.5%, transparent 87%, #eeeeee 87.5%, #eeeeee),linear-gradient(30deg, #eeeeee 12%, transparent 12.5%, transparent 87%, #eeeeee 87.5%, #eeeeee),linear-gradient(150deg, #eeeeee 12%, transparent 12.5%, transparent 87%, #eeeeee 87.5%, #eeeeee),linear-gradient(60deg, #dddddd 25%, transparent 25.5%, transparent 75%, #dddddd 75%, #dddddd),linear-gradient(60deg, #dddddd 25%, transparent 25.5%, transparent 75%, #dddddd 75%, #dddddd);
+	margin: -20px 15px 0 15px;
+	padding: 50px 0;
+	background: url(/assets/svg/top_mountain.svg);
+	background-repeat: no-repeat;
+	background-position: right 0 bottom -165px;
+	background-size: 500px;
+}
+.jumbotron.blog {
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	text-align: center;
+	/*background: -webkit-linear-gradient(#004D9F, #049cd9);*/
+	background-color: #222;
+	background-image: linear-gradient(30deg, #333 12%, transparent 12.5%, transparent 87%, #333 87.5%, #333),linear-gradient(150deg, #333 12%, transparent 12.5%, transparent 87%, #333 87.5%, #333),linear-gradient(30deg, #333 12%, transparent 12.5%, transparent 87%, #333 87.5%, #333),linear-gradient(150deg, #333 12%, transparent 12.5%, transparent 87%, #333 87.5%, #333),linear-gradient(60deg, #444 25%, transparent 25.5%, transparent 75%, #444 75%, #444),linear-gradient(60deg, #444 25%, transparent 25.5%, transparent 75%, #444 75%, #444);
 	background-size: 80px 140px;
 	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 	background-position-x: center, center, calc(50% - 40px), calc(50% - 40px), center, calc(50% - 40px);
 	background-position-y: 0, 0, 70px, 70px, 0, 70px;
 	background-attachment: fixed;
-	border-left: 1px solid #d4d4d4;
-	border-right: 1px solid #d4d4d4;
-	border-image: linear-gradient(180deg, #d4d4d4, #a6a6a6);
-	border-image-slice: 1;
-	-webkit-box-shadow: inset 0 10px 30px rgb(0 0 0 / 30%);
-	-moz-box-shadow: inset 0 10px 30px rgb(0 0 0 / 30%);
-	box-shadow: inset 0 10px 30px rgb(0 0 0 / 30%);
-}
-.jumbotron.blog {
-	background: -webkit-linear-gradient(#004D9F, #049cd9);
-	color: #fff;
-	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
-	text-align: center;
 }
 .jumbotron.blog .inner {
-	padding: 30px 0;
+	padding: 30px 10px;
 	box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 .jumbotron.blog h1 {
 	font-family: Georgia, serif;
 	font-weight: normal;
 	letter-spacing: -0.5px;
+}
+.jumbotron.blog p {
+	font-size: 125%;
+	max-width: 750px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+.jumbotron.blog ul.links {
+	margin-bottom: 0;
+}
+.jumbotron.blog ul.links li a {
+	color: #fff;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	text-underline-offset: 3px;
+}
+.jumbotron.blog ul.links li a {
+	text-decoration-style: solid;
 }
 .jumbotron .lead {
 	font-size: 24px;
@@ -224,6 +239,12 @@ section > .page-header {
 	.support-sidebar .span9 {
 		float: none;
 		margin: 0;
+	}
+}
+@media only screen and (max-width: 500px) {
+	/* Hide the 'index' button */
+	.navbar .nav > li:first-child {
+		display: none;
 	}
 }
 @media only screen and (max-width: 450px) {
