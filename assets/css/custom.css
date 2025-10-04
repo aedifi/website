@@ -160,12 +160,9 @@ div#taper-filler {
 #btn-right {
 	margin-left: 10px;
 }
-#btn-left, #btn-right {
-	margin-bottom: 15px;
-}
 .server-status.frame {
 	width: fit-content;
-	margin: 0 auto;
+	margin: 25px auto 0 auto;
 }
 .server-status.indicator {
 	width: 13px;
