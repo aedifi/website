@@ -29,7 +29,7 @@ MinecraftAPI.getServerStatus('play.aedi.app', function (error, server) {
 		return;
 	}
 	statusIndicator.classList.add(server.online ? 'online' : 'offline');
-	statusText.innerHTML = 'Server is currently <b>' + (server.online ? 'online' : 'offline') + '</b>';
+	statusText.innerHTML = 'The server is currently <b>' + (server.online ? 'online' : 'offline') + '</b>';
 	if (server.online && server.players.now) statusText.innerHTML += ' with ' + parseInt(server.players.now) + ' player' + (server.players.now > 1 ? 's' : '');
 	statusText.innerHTML += '.';
 });
