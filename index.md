@@ -12,7 +12,7 @@ permalink: /
 	<div class="server-status frame">
 		<div class="server-status indicator"></div><p class="server-status text">Obtaining server status...</p>
 	</div>
-	<div id="taper-filler">
+	<div id="taper-filler"></div>
 </div>
 <div class="jumbotron taper"></div>
 <!-- Tooltips -->
