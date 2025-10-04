@@ -21,7 +21,6 @@ body > .container-fluid {
 }
 /* Jumbotron and button */
 .jumbotron.index {
-	height: 350px;
 	margin: -20px 0 0;
 	padding: 50px 15px;
 	position: relative;
@@ -96,10 +95,6 @@ div#taper-filler {
 	font-size: 24px;
 	line-height: 1.5;
 }
-.jumbotron .btn {
-	font-size: 21px;
-	padding: 14px 24px;
-}
 /* Customize the navbar links to be fill the entire space of the .navbar */
 .navbar .navbar-inner {
 	padding: 0;
@@ -154,15 +149,9 @@ div#taper-filler {
 .lead {
 	font-weight: normal;
 }
-#btn-left {
-	margin-right: 10px;
-}
-#btn-right {
-	margin-left: 10px;
-}
 .server-status.frame {
 	width: fit-content;
-	margin: 25px auto 0 auto;
+	margin: 10px auto 0 auto;
 }
 .server-status.indicator {
 	width: 13px;
@@ -188,6 +177,42 @@ div#taper-filler {
 }
 .server-status.indicator, .server-status.text {
 	float: left;
+}
+.server-ip {
+	width: fit-content;
+	margin: 0 auto 20px auto;
+}
+.server-ip label {
+	float: left;
+	margin: 5px 5px 0 0;
+}
+.btn.joinDiscord {
+	font-size: 21px;
+	padding: 14px 24px;
+	margin-bottom: 10px;
+	background-color: #6e76d0;
+	background-image: linear-gradient(to bottom,#949bdd,#4752c4);
+}
+.btn.joinDiscord:hover,
+.btn.joinDiscord:focus,
+.btn.joinDiscord:active,
+.btn.joinDiscord.active,
+.btn.joinDiscord.disabled,
+.btn.joinDiscord[disabled] {
+  color: #ffffff;
+  background-color: #4752c4;
+  *background-color: #28307d;
+}
+
+.btn.joinDiscord:active,
+.btn.joinDiscord.active {
+  background-color: #343ea4 \9;
+}
+.btn.joinDiscord > img {
+	height: 25px;
+	margin: -9px 3px -5px 0;
+	filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
+	--webkit-filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
 }
 .hero-unit.map {
 	padding: 0;
