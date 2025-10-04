@@ -4,7 +4,7 @@ title: Index
 permalink: /
 ---
 
-<div class="jumbotron index padded">
+<div class="jumbotron index">
 	<h1>A server for Minecraft where you can build anything you want.</h1>
 	<p class="lead">Aedificium is a lightweight building server with a whole bunch of cool features. It runs Cuberite, a FOSS alternative to Bukkit written in C++ and can perform large block operations without using too much memory.</p>
 	<a class="btn btn-large applyBuild" id="btn-left" href="/apply" data-toggle="tooltip" data-placement="bottom" title data-original-title="Become an architect on the creative server!">Apply to build</a>
@@ -12,7 +12,9 @@ permalink: /
 	<div class="server-status frame">
 		<div class="server-status indicator"></div><p class="server-status text">Obtaining server status...</p>
 	</div>
+	<div id="taper-filler">
 </div>
+<div class="jumbotron taper"></div>
 <!-- Tooltips -->
 <script>
 $(function() {

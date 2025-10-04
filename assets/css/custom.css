@@ -21,16 +21,36 @@ body > .container-fluid {
 }
 /* Jumbotron and button */
 .jumbotron.index {
-	margin: 50px 0;
-	text-align: center;
-}
-.jumbotron.index.padded {
-	margin: -20px 15px 0 15px;
-	padding: 50px 0;
+	height: 350px;
+	margin: -20px 0 0;
+	padding: 50px 15px;
+	position: relative;
 	background: url(/assets/svg/top_mountain.svg);
 	background-repeat: no-repeat;
-	background-position: right 0 bottom -165px;
+	background-position: right 15px bottom -165px;
 	background-size: 500px;
+	text-align: center;
+}
+.jumbotron.taper {
+	height: 300px;
+	margin: 0 0 0 -20px;
+	padding: 50px 15px 50px 35px;
+	background: url(/assets/svg/bottom_mountain.svg), linear-gradient(to bottom, transparent, #78A7FF);
+	background-repeat: no-repeat, repeat;
+	background-position: right 15px top -75px, center;
+	background-size: 500px, cover;
+	clip-path: polygon(100% 0%, 100% 217px, 92.5% 253px, 92.5% 312px, 75% 400px, 65% 350px, 55% 400px, 35% 300px, 25% 350px, 20px 230px, 20px 0%);
+	filter: drop-shadow(15px 72px 0 rgba(0,0,0,0.75));
+}
+div#taper-filler {
+	height: 100px;
+	width: 15px;
+	position: absolute;
+	right: 0;
+	bottom: -72px;
+	z-index: 1;
+	clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 100%);
+	background-color: #4a5161;
 }
 .jumbotron.blog {
 	color: #fff;
