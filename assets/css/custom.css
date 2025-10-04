@@ -27,7 +27,7 @@ body > .container-fluid {
 	position: relative;
 	background: url(/assets/svg/top_mountain.svg);
 	background-repeat: no-repeat;
-	background-position: right 15px bottom -165px;
+	background-position: right 15px bottom -160px;
 	background-size: 500px;
 	text-align: center;
 }
