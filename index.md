@@ -6,7 +6,7 @@ permalink: /
 
 <div class="jumbotron index">
 	<!-- 10-4-25 alert -->
-	<div class="alert alert-info">On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss.  <a href="/blog/downtime">Read more »</a></div>
+	<button type="button" class="close" data-dismiss="alert alert-index">×</button><div class="alert alert-info"><i class="icon-info-sign icon-2x"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/downtime">Read more »</a></div>
 	<!-- End alert -->
 	<h1>A server for Minecraft where you can build anything you want.</h1>
 	<p class="lead">Aedificium is a lightweight building server with a whole bunch of cool features. It runs Cuberite, a FOSS alternative to Bukkit written in C++ and can perform large block operations without using too much memory.</p>

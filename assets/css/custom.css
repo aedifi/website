@@ -1,3 +1,6 @@
+a {
+	color: #0077b3;
+}
 /* Custom container */
 .container-fluid {
 	margin: 0 auto;
@@ -19,30 +22,61 @@ body > .container-fluid {
 	font-weight: normal;
 	color: #bbb;
 }
+.alert.alert-index {
+	background-color: #eedc94;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#fceec1), to(#eedc94));
+    background-image: -moz-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -ms-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceec1), color-stop(100%, #eedc94));
+    background-image: -webkit-linear-gradient(top, #fceec1, #eedc94);
+    background-image: -o-linear-gradient(top, #fceec1, #eedc94);
+    background-image: linear-gradient(top, #fceec1, #eedc94);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #eedc94 #eedc94 #e4c652;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #404040;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.alert.alert-index > button {
+	color: #404040;
+	opacity: .5;
+}
+.alert.alert-index > button:hover, .alert.alert-index > button:active {
+	opacity: .75;
+}
+.alert.alert-index > .icon-2x.figure {
+	float: left;
+	margin: 0 10px -15px 0;
+	line-height: 1.5;
+	color: #404040;
+	opacity: .75;
+}
 /* Jumbotron and button */
 .jumbotron.index {
 	margin: -20px 0 0;
 	padding: 50px 15px;
 	position: relative;
-	background: url(/assets/svg/top_mountain.svg);
-	background-repeat: no-repeat;
-	background-position: right 15px bottom -160px;
-	background-size: 500px;
+	background: linear-gradient(to bottom, #FFFFFF, transparent), url(/assets/svg/top_mountain.svg);
+	background-repeat: repeat, no-repeat;
+	background-position: center, right 15px bottom -160px;
+	background-size: cover, 500px;
 	text-align: center;
 }
 .jumbotron.index > .alert:first-child {
-	margin-top: -30px;
+	margin: -30px 0 30px 0;
 	text-align: left;
 }
 .jumbotron.taper {
 	height: 300px;
 	margin: 0 0 0 -20px;
 	padding: 50px 15px 50px 35px;
-	background: url(/assets/svg/bottom_mountain.svg), linear-gradient(to bottom, transparent, #78A7FF);
-	background-repeat: no-repeat, repeat;
-	background-position: right 15px top -75px, center;
-	background-size: 500px, cover;
-	clip-path: polygon(100% 0%, 100% 217px, 92.5% 253px, 92.5% 312px, 75% 400px, 65% 350px, 55% 400px, 35% 300px, 25% 350px, 20px 230px, 20px 0%);
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTY4IiBoZWlnaHQ9IjEyNjQiPjxzdHlsZT4uQntmaWxsOiNlZWV9LkN7ZmlsbDojZGRkfS5Ee2ZpbGw6I2NjY30uRXtmaWxsOiNlNmY0ZDZ9LkZ7ZmlsbDojZDVlOWI0fS5He2ZpbGw6I2QzY2ViMX0uSHtmaWxsOiNiZmI5OTF9Lkl7ZmlsbDojYWFkNzg1fS5Ke2ZpbGw6I2E2YTE3Yn08L3N0eWxlPjxwYXRoIGQ9Im04OTYgMTE1MiAyMjQgMTEyIDIyNC0xMTJWODY0bC0yMjQtMTEyLTIyNCAxMTJ6IiBjbGFzcz0iRSIvPjxwYXRoIGQ9Im0xMTIwIDEyNjQgMjI0LTExMlY4NjRsLTIyNCAxMTItMjI0LTExMnYyODh6IiBjbGFzcz0iRiIvPjxwYXRoIGQ9Im02NzIgMTA0MCAyMjQgMTEyIDIyNC0xMTJWNzUyTDg5NiA2NDAgNjcyIDc1MnoiIGNsYXNzPSJFIi8+PHBhdGggZD0ibTg5NiAxMTUyIDIyNC0xMTJWNzUyTDg5NiA4NjQgNjcyIDc1MnYyODh6IiBjbGFzcz0iRiIvPjxwYXRoIGQ9Im0xMzQ0IDg2NC0yMjQgMTEydjI4OGwyMjQtMTEyeiIgY2xhc3M9IkkiLz48cGF0aCBkPSJtNDQ4IDEwODggMjI0LTExMlY2ODhMNDQ4IDU3NiAyMjQgNjg4djI4OHoiIGNsYXNzPSJHIi8+PHBhdGggZD0iTTY3MiA5NzZWNjg4TDQ0OCA4MDAgMjI0IDY4OHYyODhsMjI0IDExMnoiIGNsYXNzPSJIIi8+PHBhdGggZD0iTTE1NjggNjg4VjQwMGwtMjI0LTExMi0yMjQgMTEydjI4OGwyMjQgMTEyeiIgY2xhc3M9IkciLz48cGF0aCBkPSJtMTU2OCA0MDAtMjI0IDExMi0yMjQtMTEydjI4OGwyMjQgMTEyIDIyNC0xMTJ6IiBjbGFzcz0iSCIvPjxwYXRoIGQ9Im0xNTY4IDQwMC0yMjQgMTEydjI4OGwyMjQtMTEyeiIgY2xhc3M9IkoiLz48cGF0aCBkPSJtMTM0NCA1NzYtMjI0LTExMi0yMjQgMTEydjI4OGwyMjQgMTEyIDIyNC0xMTJ6IiBjbGFzcz0iRyIvPjxwYXRoIGQ9Ik0xMTIwIDY4OCA4OTYgNTc2djI4OGwyMjQgMTEyIDIyNC0xMTJWNTc2eiIgY2xhc3M9IkgiLz48cGF0aCBkPSJNMTM0NCA4NjRWNTc2bC0yMjQgMTEydjI4OHoiIGNsYXNzPSJKIi8+PHBhdGggZD0iTTg5NiA1NzYgNjcyIDQ2NCA0NDggNTc2djI4OGwyMjQgMTEyIDIyNC0xMTJ6IiBjbGFzcz0iRyIvPjxwYXRoIGQ9Ik02NzIgNjg4IDQ0OCA1NzZ2Mjg4bDIyNCAxMTIgMjI0LTExMlY1NzZ6IiBjbGFzcz0iSCIvPjxnIGNsYXNzPSJKIj48cGF0aCBkPSJNNDQ4IDgwMHYyODhsMjI0LTExMlY2ODh6TTg5NiA4NjRWNTc2TDY3MiA2ODh2Mjg4eiIvPjwvZz48cGF0aCBkPSJNNjcyIDY4OFY0MDBMNDQ4IDI4OCAyMjQgNDAwdjI4OGwyMjQgMTEyeiIgY2xhc3M9IkUiLz48cGF0aCBkPSJNNjcyIDQwMCA0NDggNTEyIDIyNCA0MDB2Mjg4bDIyNCAxMTIgMjI0LTExMnoiIGNsYXNzPSJGIi8+PHBhdGggZD0iTTY3MiA0MDAgNDQ4IDUxMnYyODhsMjI0LTExMnoiIGNsYXNzPSJJIi8+PHBhdGggZD0iTTg5NiA1NzYgNjcyIDY4OHYyODhsMjI0IDExMiAyMjQtMTEyVjY4OHoiIGNsYXNzPSJHIi8+PHBhdGggZD0iTTY3MiA2ODh2Mjg4bDIyNCAxMTIgMjI0LTExMlY2ODhMODk2IDgwMHoiIGNsYXNzPSJIIi8+PHBhdGggZD0ibTg5NiAxMDg4IDIyNC0xMTJWNjg4TDg5NiA4MDB6IiBjbGFzcz0iSiIvPjxwYXRoIGQ9Ik04OTYgODAwVjUxMkw2NzIgNDAwIDQ0OCA1MTJ2Mjg4bDIyNCAxMTJ6IiBjbGFzcz0iRSIvPjxwYXRoIGQ9Ik04OTYgNTEyIDY3MiA2MjQgNDQ4IDUxMnYyODhsMjI0IDExMiAyMjQtMTEyeiIgY2xhc3M9IkYiLz48cGF0aCBkPSJtNjcyIDkxMiAyMjQtMTEyVjUxMkw2NzIgNjI0eiIgY2xhc3M9IkkiLz48cGF0aCBkPSJtMTEyMCA5MTIgMjI0LTExMlY1MTJsLTIyNC0xMTItMjI0IDExMnYyODh6IiBjbGFzcz0iRSIvPjxwYXRoIGQ9Ik0xMzQ0IDgwMFY1MTJsLTIyNCAxMTItMjI0LTExMnYyODhsMjI0IDExMnoiIGNsYXNzPSJGIi8+PHBhdGggZD0iTTEzNDQgODAwVjUxMmwtMjI0IDExMnYyODh6IiBjbGFzcz0iSSIvPjxwYXRoIGQ9Ik0xMTIwIDExMnYyODhsMjI0IDExMiAyMjQtMTEyVjExMkwxMzQ0IDB6IiBjbGFzcz0iQiIvPjxwYXRoIGQ9Im0xMTIwIDQwMCAyMjQgMTEyIDIyNC0xMTJWMTEybC0yMjQgMTEyLTIyNC0xMTJ6IiBjbGFzcz0iQyIvPjxwYXRoIGQ9Ik0xMzQ0IDIyNHYyODhsMjI0LTExMlYxMTJ6IiBjbGFzcz0iRCIvPjxwYXRoIGQ9Ik02NzIgMTEydjI4OGwyMjQgMTEyIDIyNC0xMTJWMTEyTDg5NiAweiIgY2xhc3M9IkIiLz48cGF0aCBkPSJtNjcyIDQwMCAyMjQgMTEyIDIyNC0xMTJWMTEyTDg5NiAyMjQgNjcyIDExMnoiIGNsYXNzPSJDIi8+PHBhdGggZD0iTTExMjAgNDAwVjExMkw4OTYgMjI0djI4OHoiIGNsYXNzPSJEIi8+PHBhdGggZD0ibTIyNCA2MjQgMjI0LTExMlYyMjRMMjI0IDExMiAwIDIyNHYyODh6IiBjbGFzcz0iQiIvPjxwYXRoIGQ9Ik00NDggNTEyVjIyNEwyMjQgMzM2IDAgMjI0djI4OGwyMjQgMTEyeiIgY2xhc3M9IkMiLz48cGF0aCBkPSJNNDQ4IDUxMlYyMjRMMjI0IDMzNnYyODh6IiBjbGFzcz0iRCIvPjxwYXRoIGQ9Im02NzIgNjI0IDIyNC0xMTJWMjI0TDY3MiAxMTIgNDQ4IDIyNHYyODh6IiBjbGFzcz0iQiIvPjxwYXRoIGQ9Ik04OTYgNTEyVjIyNEw2NzIgMzM2IDQ0OCAyMjR2Mjg4bDIyNCAxMTJ6IiBjbGFzcz0iQyIvPjxwYXRoIGQ9Ik04OTYgNTEyVjIyNEw2NzIgMzM2djI4OHoiIGNsYXNzPSJEIi8+PHBhdGggZD0ibTQ0OCA3MzYgMjI0LTExMlYzMzZMNDQ4IDIyNCAyMjQgMzM2djI4OHoiIGNsYXNzPSJCIi8+PHBhdGggZD0iTTY3MiA2MjRWMzM2TDQ0OCA0NDggMjI0IDMzNnYyODhsMjI0IDExMnoiIGNsYXNzPSJDIi8+PHBhdGggZD0iTTY3MiA2MjRWMzM2TDQ0OCA0NDh2Mjg4eiIgY2xhc3M9IkQiLz48cGF0aCBkPSJtODk2IDUxMiAyMjQgMTEyIDIyNC0xMTJWMjI0bC0yMjQtMTEyLTIyNCAxMTJ6IiBjbGFzcz0iQiIvPjxwYXRoIGQ9Im0xMTIwIDYyNCAyMjQtMTEyVjIyNGwtMjI0IDExMi0yMjQtMTEydjI4OHoiIGNsYXNzPSJDIi8+PHBhdGggZD0ibTEzNDQgMjI0LTIyNCAxMTJ2Mjg4bDIyNC0xMTJ6IiBjbGFzcz0iRCIvPjwvc3ZnPg=="), url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj4KICA8cGF0aCBmaWxsPSIjZWVlIiBkPSJtMCA0MDAgMjI0IDExMiAyMjQtMTEyVjExMkwyMjQgMCAwIDExMloiLz4KICA8cGF0aCBmaWxsPSIjZGRkIiBkPSJtMjI0IDUxMiAyMjQtMTEyVjExMkwyMjQgMjI0IDAgMTEydjI4OHoiLz4KICA8cGF0aCBmaWxsPSIjY2NjIiBkPSJtMjI0IDUxMiAyMjQtMTEyVjExMkwyMjQgMjI0WiIvPgo8L3N2Zz4K"), linear-gradient(to bottom, transparent, #78A7FF);
+	background-repeat: no-repeat, no-repeat, repeat;
+	background-position: right 15px top -75px, left 156px top 100px, center;
+	background-size: 500px, 165px, cover;
+	clip-path: polygon(100% 0%, 100% 215px, 92.5% 253px, 92.5% 314px, 75% 400px, 65% 350px, 55% 400px, 35% 300px, 22.5% 362px, 20px 264px, 22px 0%);
 	filter: drop-shadow(15px 72px 0 rgba(0,0,0,0.75));
 }
 div#taper-filler {
@@ -50,7 +84,7 @@ div#taper-filler {
 	width: 15px;
 	position: absolute;
 	right: 0;
-	bottom: -72px;
+	bottom: -72.5px;
 	z-index: 1;
 	clip-path: polygon(0% 0%, 100% 7%, 100% 100%, 0% 100%);
 	background-color: #4a5161;
@@ -228,7 +262,7 @@ div#taper-filler {
 }
 .social-links > #discord-tos {
 	margin: 0 auto 15px auto;
-	font-size: 80%;
+	font-size: 85%;
 	line-height: 1.25;
 }
 .hero-unit.map {
@@ -316,6 +350,27 @@ section > .page-header {
 	margin-bottom: 10px;
 }
 /* Mobile */
+@media only screen and (max-width: 960px) {
+	.jumbotron.taper {
+		height: 250px;
+		clip-path: inset(0 0 0 20px);
+		background-position: right 15px top -75px, left 20px top 90px, center;
+	}
+}
+@media only screen and (max-width: 655px) {
+	.jumbotron.index {
+		overflow: visible;
+		overflow-x: clip;
+		background-position: center, center bottom -160px;
+	}
+	.jumbotron.taper {
+		background-position: left calc(50% - -10px) top -75px, left 0 top 0, center;
+		background-size: 500px, 0, cover;
+	}
+	div#taper-filler {
+		right: calc(50% - 265px);
+	}
+}
 @media only screen and (max-width: 600px) {
 	#gallery .thumbnails {
 		flex-wrap: wrap;
