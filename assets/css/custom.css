@@ -156,8 +156,8 @@ div#taper-filler {
 .server-status.indicator {
 	width: 13px;
 	height: 13px;
-	margin-top: 2.5px;
-	margin-right: 7px;
+	margin-top: 3.5px;
+	margin-right: 6px;
 	background-color: #faa732;
     background-image: linear-gradient(to bottom, #fbb450, #f89406);
     background-repeat: repeat-x;
@@ -175,21 +175,29 @@ div#taper-filler {
 	background-color: #da4f49;
 	background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
 }
-.server-status.indicator, .server-status.text {
+.server-status.indicator, .server-status.text, .server-ip label {
 	float: left;
+}
+.server-status.text {
+	margin: 1px 5px 0 0;
+}
+.server-status > .btn.refreshStatus {
+	padding: 0 6px;
 }
 .server-ip {
 	width: fit-content;
-	margin: 0 auto 20px auto;
+	margin: 5px auto 15px auto;
 }
 .server-ip label {
-	float: left;
 	margin: 5px 5px 0 0;
+}
+.server-ip .btn.copy {
+	padding: 4px 10px;
 }
 .btn.joinDiscord {
 	font-size: 21px;
 	padding: 14px 24px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	background-color: #6e76d0;
 	background-image: linear-gradient(to bottom,#949bdd,#4752c4);
 }
@@ -214,7 +222,13 @@ div#taper-filler {
 	filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
 	--webkit-filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.25));
 }
+.social-links > #discord-tos {
+	margin: 0 auto 15px auto;
+	font-size: 80%;
+	line-height: 1.25;
+}
 .hero-unit.map {
+	margin: 0;
 	padding: 0;
 	height: 400px;
 	height: calc(100vh - 300px);

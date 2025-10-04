@@ -3,8 +3,8 @@
 		{% assign active = page.url | downcase | split: '/' %}
 		<a {% if active[1] == 'tos' %}class='btn active'{% else %}class='btn'{% endif %} href="/tos">Terms</a>
 		<a class="btn" href="mailto:aedi@murgleis.com">Contact</a>
-		<a class="btn btn-info" href="https://github.com/aedifi/" target="_blank">GitHub</a>
+		<a {% if active[1] == 'sitemap' %}class='btn active'{% else %}class='btn'{% endif %}  class="btn btn-info" href="/sitemap"></a>Sitemap</a>
 	</div>
 	<p>Copyright © {{ site.time | date: '%Y' | roman }} Aedificium, some rights reserved.</p>
-	<p>Minecraft is property of <a href="https://www.mojang.com/about/">Mojang Specifications</a>.</p>
+	<p>Minecraft is property of <a href="https://www.mojang.com/about/" target="_blank">Mojang Specifications <i class="icon-external-link"></i></a>.</p>
 </div>
