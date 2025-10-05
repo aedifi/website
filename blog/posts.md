@@ -4,7 +4,7 @@ title: List of blog posts
 permalink: /blog/posts/
 ---
 Blog posts are grouped according to year and sorted chronologically (starting from most recent).
-### 2025
+#### 2025
 
 {%- assign date_format = site.minima.date_format | default: '%-d %B' -%}
 {%- assign sorted_posts = site.posts | sort: 'date' -%}
