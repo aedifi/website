@@ -12,6 +12,6 @@ Blog posts are grouped according to year and sorted chronologically (starting fr
 {% for post in sorted_posts reversed %}
 	{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 	{% if year == '2025' %}
-{{ post.date | date: date_format }}&#58; [{{ post.title }}](..{{ post.url }})
+{{ post.date | date: date_format }}&#58; [{{ post.title }}]({{ post.url }})
 	{% endif %}
 {% endfor %}
