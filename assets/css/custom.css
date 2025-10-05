@@ -91,6 +91,7 @@ div#taper-filler {
 	background-color: #4a5161;
 }
 .jumbotron.blog {
+	position: relative;
 	color: #fff;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
 	text-align: center;
@@ -326,15 +327,24 @@ section .alert {
 	margin-left: 0;
 }
 .blog-sidebar .span3 {
-	border-right: 1px solid #dddddd;
+	min-height: 500px;
+	margin-top: -5px;
+	background: #f6f6f6;
+	border: 1px solid #dddddd;
+	border-top: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 .support-sidebar .span9, .blog-sidebar .span9 {
 	width: unset;
 	max-width: 700px;
 }
-.support-sidebar .span3 .tabbable.tabs-left,
-.blog-sidebar .span3 .tabbable.tabs-left {
+.support-sidebar .span3 .tabbable.tabs-left {
 	margin-top: 20px;
+}
+.blog-sidebar .span3 .tabbable.tabs-left {
+	margin-top: 15px;
+	padding-left: 5px;
 }
 .blog-sidebar .span3 .tabbable.tabs-left .nav.nav-tabs {
 	margin-right: -1px;

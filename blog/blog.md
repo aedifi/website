@@ -1,5 +1,5 @@
 ---
-layout: blog
-title: Blog
+layout: redirect
 permalink: /blog/
+redirect: /blog/posts/
 ---

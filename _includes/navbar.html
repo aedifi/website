@@ -4,7 +4,7 @@
 		<div class="container">
 			<ul class="nav">
 				<li {% if active[1] == null %}class='active'{% endif %}><a href="/">Index</a></li>
-				<li {% if active[1] == 'blog' %}class='active'{% endif %}><a href="/blog">Blog</a></li>
+				<li {% if active[1] == 'blog' %}class='active'{% endif %}><a href="/blog/latest">Blog</a></li>
 				<li {% if active[1] == 'resources' or active[1] == 'map' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 					<ul class="dropdown-menu">
