@@ -16,8 +16,7 @@ layout: default
 		<div class="tabbable tabs-left">
 			<ul class="nav nav-tabs">
 			{% for post in sorted_posts limit:5 %}
-				{% assign active1 = post.url | downcase | split: '/' %}
-				<li {% if active[2] == active1[2] %}class='active'{% endif %}><a href="/blog/{{ active1[2] }}">{{ post.date | date: date_format }} - {{ post.title }}</a></li>
+				<li {% if post.url == page.url %}class='active'{% endif %}><a href="/blog/{{ active1[2] }}">{{ post.date | date: date_format }} - {{ post.title }}</a></li>
 			{% endfor %}
 				<li><a href="/blog/posts">See all blog posts »</a></li>
 			</ul>
@@ -26,7 +25,7 @@ layout: default
 	<!--/span-->
 	<div class="span9">
 		<section class="blog-post">
-			<div class="page-header"><h1>{{ page.title }} <small>{{ post.date | date: date_format_1 }}</small></h1></div>
+			<div class="page-header"><h1>{{ page.title }} <small>{{ page.date | date: date_format_1 }}</small></h1></div>
 			{{ content }}
 		</section>
 	</div>
