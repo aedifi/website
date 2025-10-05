@@ -1,0 +1,6 @@
+{% assign latest_post = site.posts[0] %}
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="1; url={{ latest_post.url }}">
+<script>
+	window.location.href = "{{ latest_post.url }}"
+</script>

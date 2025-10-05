@@ -18,7 +18,7 @@ layout: default
 			{% for post in sorted_posts limit:5 %}
 				<li {% if post.url == page.url %}class='active'{% endif %}><a href="{{ post.url }}">{{ post.date | date: date_format }} - {{ post.title }}</a></li>
 			{% endfor %}
-				<li><a href="/blog/posts">See all blog posts »</a></li>
+				<li {% if active[2] == 'posts' %}class='active'{% endif %}><a href="/blog/posts">See all blog posts »</a></li>
 			</ul>
 		</div>
 	</div>

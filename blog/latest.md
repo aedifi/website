@@ -1,5 +1,4 @@
 ---
-layout: redirect
+layout: redirect-latest
 permalink: /blog/latest/
-redirect: site.posts[0].url
 ---
