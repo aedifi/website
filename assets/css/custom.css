@@ -108,7 +108,6 @@ div#taper-filler {
 }
 .jumbotron.blog .inner {
 	padding: 30px 10px;
-	box-shadow: inset 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 .jumbotron.blog h1 {
 	font-family: Georgia, serif;
@@ -130,7 +129,7 @@ div#taper-filler {
 	text-decoration-style: dotted;
 	text-underline-offset: 3px;
 }
-.jumbotron.blog ul.links li a:hover {
+.jumbotron.blog ul.links li a:hover, .jumbotron.blog ul.links li a:active {
 	text-decoration-style: solid;
 }
 .jumbotron .lead {
@@ -317,16 +316,23 @@ section .alert {
 	box-shadow: 0 1px 4px rgb(0 0 0 / 7%);
 }
 /* Support pages */
-.support-sidebar {
+.support-sidebar, .blog-sidebar {
 	display: flex;
 }
-.support-sidebar .span3 {
+.support-sidebar .span3, .blog-sidebar .span3 {
 	min-width: 220px;
 	margin-left: 0;
 }
-.support-sidebar .span9 {
+.blog-sidebar .span3 {
+	margin-top: -20px;
+	border-right: 1px solid #dddddd;
+}
+.support-sidebar .span9, .blog-sidebar .span9 {
 	width: unset;
 	max-width: 700px;
+}
+.support-sidebar .span3 .tabbable.tabs-left {
+	padding-top: 20px;
 }
 .support-sidebar code {
 	background-color: #fee9cc;
@@ -345,10 +351,11 @@ section > .page-header {
 	margin-bottom: 7px;
 	padding-bottom: 0;
 }
-.support .page-header h1 {
+.support .page-header h1, .blog-post .page-header h1 {
 	margin-bottom: 7px;
 }
-.support h1, .support h2, .support h3, .support h4, .support h5, .support h6 {
+.support h1, .support h2, .support h3, .support h4, .support h5, .support h6,
+.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
 	line-height: 1;
 	margin-top: 17px;
 	margin-bottom: 10px;
