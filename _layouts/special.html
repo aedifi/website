@@ -1,0 +1,16 @@
+{% assign active = page.url | downcase | split: '/' %}
+---
+layout: default
+---
+<div class="content">
+	<ul class="breadcrumb">
+    	<li><a href="/">Index</a> <span class="divider">/</span></li>
+        <li class="active">{{ page.title }}</li>
+    </ul>
+	<section id="{{ active[1] }}">
+		<div class="page-header">
+			<h1>{{ page.title }}</h1>
+		</div>
+		{{ content }}
+	</section>
+</div>

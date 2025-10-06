@@ -1,5 +1,5 @@
 {% assign active = page.url | downcase | split: '/' %}
-<div {% if active[1] == 'blog' or active[1] == 'map' %}class='navbar squared'{% else %}class='navbar'{% endif %}>
+<div {% if active[1] == 'blog' %}class='navbar squared'{% else %}class='navbar'{% endif %}>
 	<div class="navbar-inner">
 		<div class="container">
 			<ul class="nav">
@@ -26,7 +26,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li class="nav-header">Introduction</li>
-						<li {% if active[1] == 'support' and active[2] == null %}class='active'{% endif %}><a href="/about">About the server</a></li>
+						<li {% if active[1] == 'support' and active[2] == null %}class='active'{% endif %}><a href="/support">About the server</a></li>
 						<li {% if active[1] == 'support' and active[2] == 'rules' %}class='active'{% endif %}><a href="/support/rules">Conduct policy</a></li>
 						<li {% if active[1] == 'support' and active[2] == 'issues' %}class='active'{% endif %}><a href="/support/issues">Reporting issues</a></li>
 						<li {% if active[1] == 'support' and active[2] == 'faq' %}class='active'{% endif %}><a href="/support/faq">Frequently asked questions</a></li>

@@ -3,10 +3,9 @@ layout: default
 title: Index
 permalink: /
 ---
-
 <div class="jumbotron index">
 	<!-- 10-4-25 alert -->
-	<div class="alert alert-index"><button type="button" class="close" data-dismiss="alert alert-index">×</button><i class="icon-info-sign icon-2x figure"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/downtime">Read more »</a></div>
+	<div class="alert alert-index"><button type="button" class="close" data-dismiss="alert alert-index">×</button><i class="icon-info-sign icon-2x figure"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/2025/09/12/server-back-online">Read more »</a></div>
 	<!-- End alert -->
 	<h1>A server for Minecraft where you can build anything you want.</h1>
 	<p class="lead">Aedificium is a lightweight building server with a whole bunch of cool features. It runs Cuberite, a FOSS alternative to Bukkit written in C++ and can perform large block operations without using too much memory.</p>
@@ -34,7 +33,7 @@ permalink: /
 	<div id="taper-filler"></div>
 </div>
 <div class="jumbotron taper"></div>
-<!-- Tooltips -->
+<!-- Server status -->
 <script>
 function getServerStatus() {
 	const statusIndicator = document.querySelector('.server-status.indicator');

@@ -2,6 +2,7 @@
 	<div class="btn-group">
 		{% assign active = page.url | downcase | split: '/' %}
 		<a {% if active[1] == 'tos' %}class='btn active'{% else %}class='btn'{% endif %} href="/tos">Terms</a>
+		<a {% if active[1] == 'privacy' %}class='btn active'{% else %}class='btn'{% endif %} href="/privacy">Privacy</a>
 		<a class="btn" href="mailto:aedi@murgleis.com">Contact</a>
 		<a {% if active[1] == 'sitemap' %}class='btn active'{% else %}class='btn'{% endif %}  class="btn btn-info" href="/sitemap">Sitemap</a>
 	</div>
