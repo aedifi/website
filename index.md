@@ -7,8 +7,8 @@ permalink: /
 	<!-- 10-4-25 alert -->
 	<div class="alert alert-index"><button type="button" class="close" data-dismiss="alert alert-index">×</button><i class="icon-info-sign icon-2x figure"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/2025/09/12/server-back-online">Read more »</a></div>
 	<!-- End alert -->
-	<h1>A server for Minecraft where you can build anything you want.</h1>
-	<p class="lead">Aedificium is a lightweight building server with a whole bunch of cool features. It runs Cuberite, a FOSS alternative to Bukkit written in C++ and can perform large block operations without using too much memory.</p>
+	<h1>The kind of <span id="carousel-gameMode">creative</span> server where you can <span id="carousel-verbage">build anything</span> you want.</h1>
+	<p class="lead">Aedificium is an architecture-oriented server for the sandbox video game Minecraft. Anyone can join our server and start building right away in creative mode or alternatively play in a survival-only part of the main world.</p>
 	<div class="server-status frame">
 		<div class="server-status indicator"></div><p class="server-status text">Obtaining server status...</p> <button type="button" class="btn btn-mini refreshStatus" onclick="document.querySelector('.server-status .icon-refresh').classList.add('icon-spin'); document.querySelector('.server-status.indicator').classList.remove('online','offline'); document.querySelector('.server-status.text').innerHTML = 'Obtaining server status...'; setTimeout(() => {getServerStatus(); document.querySelector('.server-status .icon-refresh').classList.remove('icon-spin');},100);"><i class="icon-refresh"></i></button>
 	</div>
@@ -51,4 +51,35 @@ function getServerStatus() {
 	});
 };
 getServerStatus();
+</script>
+<!-- Header text carousel -->
+<script>
+const wordPairs = [
+    ['creative', 'build anything'],
+    ['survival', 'fight anyone']
+];
+let pairIndex = 0;
+const firstWord = document.getElementById('carousel-gameMode');
+const secondWord = document.getElementById('carousel-verbage');
+function updateElement(element, newWord) {
+    element.classList.remove('fade-in');
+    element.classList.add('fade-out');
+    setTimeout(() => {
+        element.textContent = newWord;
+        element.classList.remove('fade-out');
+        element.classList.add('fade-in');
+    }, 500);
+}
+function changeWords() {
+    const [word1, word2] = wordPairs[pairIndex];
+    updateElement(firstWord, word1);
+    updateElement(secondWord, word2);
+    pairIndex = (pairIndex + 1) % wordPairs.length;
+}
+const [initialWord1, initialWord2] = wordPairs[pairIndex];
+firstWord.textContent = initialWord1;
+secondWord.textContent = initialWord2;
+firstWord.classList.add('fade-in');
+secondWord.classList.add('fade-in');
+setInterval(changeWords, 7000);
 </script>

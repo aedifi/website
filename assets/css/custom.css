@@ -1,6 +1,13 @@
 a {
 	color: #0077b3;
 }
+/* Transition */
+.fade-in {
+	opacity: 1;
+}
+.fade-out {
+	opacity: 0;
+}
 /* Custom container */
 .container-fluid {
 	margin: 0 auto;
@@ -192,6 +199,9 @@ div#taper-filler {
 }
 .lead {
 	font-weight: normal;
+}
+#carousel-gameMode, #carousel-verbage {
+	transition: opacity 0.5s ease-in-out;
 }
 .server-status.frame {
 	width: fit-content;
