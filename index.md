@@ -24,8 +24,8 @@ permalink: /
 			<a class="btn" href="https://github.com/aedifi" target="_blank"><i class="icon-github-alt"></i> GitHub <i class="icon-external-link"></i></a> <a class="btn" href="https://twitter.com/aedsrv" target="_blank"><i class="icon-twitter"></i> Twitter <i class="icon-external-link"></i></a> <div class="btn-group">
 				<button class="btn dropdown-toggle" data-toggle="dropdown">More links <span class="caret"></span></button>
 				<ul class="dropdown-menu" style="text-align:left">
+					<li><a href="/stats">Server statistics</a></li>
 					<li><a href="https://www.planetminecraft.com/member/aedifi" target="_blank">Planet Minecraft <i class="icon-external-link"></i></a></li>
-					<li><a href="https://murgleis.com/services/aedi" target="_blank">murgleis.com <i class="icon-external-link"></i></a></li>
 				</ul>
         	</div>
 		</span>

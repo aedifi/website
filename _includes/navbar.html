@@ -8,18 +8,17 @@
 				<li {% if active[1] == 'resources' or active[1] == 'map' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li class="nav-header">Quick links</li>
-						<li {% if active[1] == 'support' and active[2] == 'commands' %}class='active'{% endif %}><a href="/support/commands">List of commands</a></li>
-						<li {% if active[1] == 'support' and active[2] == 'vote' %}class='active'{% endif %}><a href="/support/vote">List of voting sites</a></li>
+						<li {% if active[1] == 'map' %}class='active'{% endif %}><a href="/map">Dynmap® map</a></li>
+						<li {% if active[1] == 'stats' %}class='active'{% endif %}><a href="/stats">Server statistics</a></li>
 						<li class="divider"></li>
 						<li class="nav-header">Forms</li>
 						<li><a href="/forms/banned">Appeal a ban</a></li>
 						<li><a href="/forms/architect">Become an architect</a></li>
 						<li class="divider"></li>
 						<li class="nav-header">External pages</li>
-						<li {% if active[1] == 'map' %}class='active'{% endif %}><a href="/map">Dynmap® map</a></li>
 						<li><a href="https://files.aedi.app/" target="_blank">Static file server <i class="icon-external-link"></i></a></li>
 						<li><a href="https://panel.aedi.app/" target="_blank">Pterodactyl® panel <i class="icon-external-link"></i></a></li>
+						<li><a href="https://www.planetminecraft.com/member/aedifi" target="_blank">Planet Minecraft <i class="icon-external-link"></i></a></li>
 					</ul>
 				</li>
 				<li {% if active[1] == 'support' %}class='dropdown active'{% else %}class='dropdown'{% endif %}>

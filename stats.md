@@ -3,6 +3,8 @@ layout: special
 title: Server statistics
 permalink: /stats/
 ---
+Server statistics are gathered using MinecraftAPI.
+
 <table class="table table-bordered table-striped server-stats">
 	<thead>
 		<tr>
@@ -13,16 +15,16 @@ permalink: /stats/
 	</thead>
 	<tbody>
 		<!-- Server status -->
-		<tr class="warning">
+		<tr id="srv-row-status" class="warning">
 			<td rowspan="3">Server status</td>
 			<td>status</td>
 			<td id="srv-data-status" class="value">Loading...</td>
 		</tr>
-		<tr class="success">
+		<tr id="srv-row-online" class="warning">
 			<td>online</td>
             <td id="srv-data-online" class="value">Loading...</td>
         </tr>
-		<tr class="warning">
+		<tr id="srv-row-error" class="warning">
             <td>error</td>
             <td id="srv-data-error" class="value">Loading...</td>
         </tr>
@@ -30,7 +32,7 @@ permalink: /stats/
 		<tr>
 			<td rowspan="2">Minecraft protocol</td>
 			<td>server.name</td>
-			<td id="srv-data-server-name" class="value">Loading...</td>>
+			<td id="srv-data-server-name" class="value">Loading...</td>
 		</tr>
 		<tr>
 			<td>server.protocol</td>
@@ -61,6 +63,7 @@ permalink: /stats/
 		</tr>
 	</tbody>
 </table>
+<button type="button" class="btn copy" style="float:right; margin-bottom:5px"> <i class="icon-refresh"></i> Refresh</button>
 <script>
 function getServerStatus() {
 	const statusText = document.querySelector('.server-status.text');
@@ -72,19 +75,29 @@ function getServerStatus() {
 		}
 		// Populate values:
 		// Server status
-		document.getElementById('srv-data-status').innerHTML = print(server.status);
-		document.getElementById('srv-data-online').innerHTML = print(server.online);
-		document.getElementById('srv-data-error').innerHTML = print(server.error);
+		document.getElementById('srv-data-status').innerHTML = '\"' + server.status + '\"';
+		document.getElementById('srv-row-status').classList.remove('warning');
+		if (server.status = 'success') document.getElementById('srv-row-status').classList.add('success');
+		else document.getElementById('srv-row-status').classList.add('error');
+		document.getElementById('srv-data-online').innerHTML = (server.online ? 'true' : 'false');
+		document.getElementById('srv-row-online').classList.remove('warning')
+		if (server.online) document.getElementById('srv-row-online').classList.add('success');
+		else document.getElementById('srv-row-online').classList.add('error');
+		document.getElementById('srv-data-error').innerHTML = (server.error ? '\"' + server.error + '\"' : 'null');
+		if (server.error) {
+			document.getElementById('srv-row-error').classList.remove('warning');
+			document.getElementById('srv-row-error').classList.add('error');
+		}
 		// Minecraft protocol
-		document.getElementById('srv-data-server-name').innerHTML = print(server.server.name);
-		document.getElementById('srv-data-server-protocol').innerHTML = print(server.server.protocol);
+		document.getElementById('srv-data-server-name').innerHTML = '\"' + server.server.name + '\"';
+		document.getElementById('srv-data-server-protocol').innerHTML = server.server.protocol;
 		// Player information
-		document.getElementById('srv-data-players-max').innerHTML = print(server.players.max);
-		document.getElementById('srv-data-players-now').innerHTML = print(server.players.now);
+		document.getElementById('srv-data-players-max').innerHTML = server.players.max;
+		document.getElementById('srv-data-players-now').innerHTML = server.players.now;
 		// Time
-		document.getElementById('srv-data-last-updated').innerHTML = print(server.last_updated);
-		document.getElementById('srv-data-last-online').innerHTML = print(server.last_online);
-		document.getElementById('srv-data-duration').innerHTML = print(server.duration);
+		document.getElementById('srv-data-last-updated').innerHTML = server.last_updated;
+		document.getElementById('srv-data-last-online').innerHTML = (server.last_online ? server.last_online : 'null');
+		document.getElementById('srv-data-duration').innerHTML = server.duration;
 	});
 };
 getServerStatus();
