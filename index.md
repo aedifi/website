@@ -55,8 +55,8 @@ getServerStatus();
 <!-- Header text carousel -->
 <script>
 const wordPairs = [
-	['survival', 'fight anyone'],
-	['creative', 'build anything']
+	['creative', 'build anything'],
+	['survival', 'fight anyone']
 ];
 let pairIndex = 0;
 const firstWord = document.getElementById('carousel-gameMode');
