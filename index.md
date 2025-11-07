@@ -81,5 +81,6 @@ firstWord.textContent = initialWord1;
 secondWord.textContent = initialWord2;
 firstWord.classList.add('fade-in');
 secondWord.classList.add('fade-in');
+pairIndex = (pairIndex + 1) % wordPairs.length;
 setInterval(changeWords, 7000);
 </script>
