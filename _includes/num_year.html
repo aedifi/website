@@ -1,0 +1,26 @@
+{% assign current_year = site.time | date: "%Y" | plus: 0 %}
+{% assign roman_year = "" %}
+{% assign thousands = current_year | divided_by: 1000 %}
+{% if thousands >= 1 %}{% assign roman_year = roman_year | append: "M" %}{% endif %}
+{% if thousands >= 2 %}{% assign roman_year = roman_year | append: "M" %}{% endif %}
+{% assign remainder = current_year | modulo: 1000 %}
+{% assign hundreds = remainder | divided_by: 100 %}
+{% if hundreds == 9 %}{% assign roman_year = roman_year | append: "CM" %}
+{% elsif hundreds >= 5 %}{% assign roman_year = roman_year | append: "D" %}{% if hundreds >= 6 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}{% if hundreds >= 7 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}{% if hundreds >= 8 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}
+{% elsif hundreds == 4 %}{% assign roman_year = roman_year | append: "CD" %}
+{% else %}{% if hundreds >= 1 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}{% if hundreds >= 2 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}{% if hundreds >= 3 %}{% assign roman_year = roman_year | append: "C" %}{% endif %}
+{% endif %}
+{% assign remainder = remainder | modulo: 100 %}
+{% assign tens = remainder | divided_by: 10 %}
+{% if tens == 9 %}{% assign roman_year = roman_year | append: "XC" %}
+{% elsif tens >= 5 %}{% assign roman_year = roman_year | append: "L" %}{% if tens >= 6 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}{% if tens >= 7 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}{% if tens >= 8 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}
+{% elsif tens == 4 %}{% assign roman_year = roman_year | append: "XL" %}
+{% else %}{% if tens >= 1 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}{% if tens >= 2 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}{% if tens >= 3 %}{% assign roman_year = roman_year | append: "X" %}{% endif %}
+{% endif %}
+{% assign ones = remainder | modulo: 10 %}
+{% if ones == 9 %}{% assign roman_year = roman_year | append: "IX" %}
+{% elsif ones >= 5 %}{% assign roman_year = roman_year | append: "V" %}{% if ones >= 6 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}{% if ones >= 7 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}{% if ones >= 8 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}
+{% elsif ones == 4 %}{% assign roman_year = roman_year | append: "IV" %}
+{% else %}{% if ones >= 1 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}{% if ones >= 2 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}{% if ones >= 3 %}{% assign roman_year = roman_year | append: "I" %}{% endif %}
+{% endif %}
+{{ roman_year }}

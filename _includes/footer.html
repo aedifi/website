@@ -6,6 +6,6 @@
 		<a class="btn" href="mailto:aedi@murgleis.com">Contact</a>
 		<a {% if active[1] == 'sitemap' %}class='btn active'{% else %}class='btn'{% endif %}  class="btn btn-info" href="/sitemap">Sitemap</a>
 	</div>
-	<p>Copyright © {{ site.time | date: '%Y' | roman }} Aedificium, some rights reserved.</p>
+	<p>Copyright © {% include num_year.html %} Aedificium, some rights reserved.</p>
 	<p>Minecraft is property of <a href="https://www.mojang.com/about/" target="_blank">Mojang Specifications <i class="icon-external-link"></i></a>.</p>
 </div>

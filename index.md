@@ -5,7 +5,7 @@ permalink: /
 ---
 <div class="jumbotron index">
 	<!-- 10-4-25 alert -->
-	<div class="alert alert-index"><button type="button" class="close" data-dismiss="alert alert-index">×</button><i class="icon-info-sign icon-2x figure"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/2025/09/12/server-back-online">Read more »</a></div>
+	<div id="server-back-online-notif" class="alert alert-index"><button type="button" class="close" data-dismiss="alert">×</button><i class="icon-info-sign icon-2x figure"></i><strong>Returning players:</strong> On July 9 2025, the server shut down after suffering a power surge incident.  Two months later, on September 12, the server was brought back online.  Thanks to integral recovery efforts, there has been no data loss whatsoever.  <a href="/blog/2025/09/12/server-back-online">Read more »</a></div>
 	<!-- End alert -->
 	<h1>The kind of <span id="carousel-gameMode">creative</span> server where you can <span id="carousel-verbage">build anything</span> you want.</h1>
 	<p class="lead">Aedificium is an architecture-oriented server for the sandbox video game Minecraft. Anyone can join our server and start building right away in creative mode or alternatively play in a survival-only part of the main world.</p>
@@ -83,4 +83,29 @@ firstWord.classList.add('fade-in');
 secondWord.classList.add('fade-in');
 pairIndex = (pairIndex + 1) % wordPairs.length;
 setInterval(changeWords, 7000);
+</script>
+<!-- Alert dismissal persistence -->
+<script>
+const alertId = 'server-back-online-notif';
+const storageKey = 'aedi-alert-' + alertId + '-dismissed';
+const alert = document.getElementById(alertId);
+
+if (alert) {
+	if (localStorage.getItem(storageKey) === 'true') {
+		alert.style.display = 'none';
+	} else {
+		alert.addEventListener('closed', function() {
+			localStorage.setItem(storageKey, 'true');
+		});
+		
+		const closeButton = alert.querySelector('.close[data-dismiss="alert"]');
+		if (closeButton) {
+			closeButton.addEventListener('click', function() {
+				setTimeout(function() {
+					localStorage.setItem(storageKey, 'true');
+				}, 300);
+			});
+		}
+	}
+}
 </script>
